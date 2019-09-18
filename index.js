@@ -35,7 +35,7 @@ function currentLine (deliLine) {
     let name=deliLine[i];
     lineMsg += ` ${place}. ${name}`;
     if (place < deliLine.length) {
-      lineMsg += ", "; 
+      lineMsg += ",  "; 
     }
   }
   
