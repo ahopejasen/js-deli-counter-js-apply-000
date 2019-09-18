@@ -14,6 +14,20 @@ function nowServing (deliLine) {
 }
 
 function currentLine (deliLine) {
-  const emptyLineMsg="The line is currently empty.";
   
+  const emptyLineSuffix=" empty.";
+  let lineMsg="The line is currently";
+  lineMsg += (deliLine.length)? ":" : emptyLineSuffix;
+    
+  for (let i=0; i<deliLine.length; i++) {
+    let place=i+1;
+    let name=deliLine[i];
+    lineMsg += ` ${place}. ${name}`;
+    if (place < deliLine.length) {
+      lineMsg += ", "; 
+    }
+  }
+  
+  
+  return lineMsg;
 }
