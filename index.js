@@ -13,3 +13,7 @@ function nowServing (deliLine) {
     //( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift#Syntax )
 }
 
+function currentLine (deliLine) {
+  const emptyLineMsg="The line is currently empty.";
+  
+}
