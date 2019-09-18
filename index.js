@@ -9,5 +9,5 @@ function takeANumber(deliLine,newPerson) {
 
 function nowServing (deliLine) {
   const emptyLineMsg="There is nobody waiting to be served!";
-  return (deliLine.length)? deliLine.shift() : emptyLineMsg;
+  return ( deliLine.shift() || emptyLineMsg); //shift() returns undefined for emply array
 }
