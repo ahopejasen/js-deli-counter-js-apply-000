@@ -1,5 +1,5 @@
 "use strict";
 
-function takeANumber(currentLine,newPerson) {
+function takeANumber(deliLine,newPerson) {
   
 }
